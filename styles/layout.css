@@ -1,0 +1,22 @@
+.app {
+    display: grid;
+    grid-template-columns: 51.25% 48.75%; /* Define duas colunas com as larguras desejadas */
+    height: 100vh; /* Faz o contêiner ocupar toda a altura da viewport */
+    overflow: hidden; /* Oculta transbordamento */
+}
+
+main {
+    overflow: auto; /* Permite rolagem caso o conteúdo exceda */
+    padding: 4rem; /* Espaçamento interno */
+}
+
+aside {
+    background-color: var(--surface-secondary); /* Altere conforme necessário */
+    padding: 4rem; /* Espaçamento interno */
+}
+
+/* Estilo para visualizar os elementos temporariamente */
+.main-container, .aside-container {
+    /*border: 1px solid black; /* Apenas para visualização */
+    padding: 1rem;
+}
