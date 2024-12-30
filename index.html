@@ -23,6 +23,64 @@
 
                 <h1>Formulário de Matrícula</h1>
                 <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+
+                <form action="" method="post" enctype="multipart/form-data">
+                   <fieldset class="chield-info">
+                    <legend>Informações da Criança</legend>
+
+                    <div class="input-wrapper">
+                        <label for="fullname">Nome completo</label>
+                        <input 
+                        id="fullbame" 
+                        type="text" 
+                        placeholder="Qual é o nome da criança?">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="birth">Data de Nascimento</label>
+                        <input 
+                        id="birth" 
+                        type="date" 
+                        lang="pt-br"
+                        placeholder="Qual é a data de nascimento da criança?">
+                    </div>
+
+                    <div class="select-wrapper">
+                        <label for="gender">Gênero</label>
+                        <select id="gender">
+                            <option value="male">Masculino</option>
+                            <option value="female">Feminino</option>
+                            <option value="other">Outro</option>
+                        </select>
+                        </div>
+                    
+                    <div class="textarea-wrapper">
+                        <label for="medical-info">Informações médicas</label>
+                        <textarea 
+                        name="medical-info"
+                        id="medical-info" 
+                        cols="30" rowns="10"
+                        placeholder="Qualquer informação médica sobre a criança?">
+                        </textarea>
+                    </div>
+
+                    <div class="droparea-wrapper">
+                        <label for="droparea">Documentos</label>
+                        <input 
+                        id="droparea" 
+                        type="file" 
+                        accept=".jpg,.jpeg,.png,.pdf,.docx,.xlsx,.pptx"
+                        multiple>
+                        <img src="assets/icons/cloud-upload.svg" alt="icone para upload de arquivos">
+                        <p>
+                            Clique aqui para <br>
+                            selecionar os arquivos
+                        </p>
+                    </div>
+
+
+                   </fieldset> 
+                </form>
             </div>
         </main>
 
