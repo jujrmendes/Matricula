@@ -18,8 +18,7 @@ label {
 
 input:focus,
 select:focus,
-textarea:focus,
-input [type="date"]:focus-within {
+textarea:focus {
     outline: .25rem solid var(--surface-secondary);
     border: .125rem solid var(--text-highlight);
     outline-offset: .1px;
@@ -28,15 +27,14 @@ input [type="date"]:focus-within {
 input[type="date"] {
     position: relative;
 
-    &::webkit-calendar-picker-indicator {
+    &::-webkit-calendar-picker-indicator {
         opacity: 0;
     }
 
     &::before {
         content:"";
         position: absolute;
-        background: url(../../assets/icons/calendar-03.svg)
-        center/contain;
+        background: url(../../assets/icons/calendar-03.svg) center/contain;
         right:1rem;
         width: 1.25rem;
         height: 1.25rem;
@@ -46,6 +44,22 @@ input[type="date"] {
 }
 
 select {
-    background: url(../../assets/icons/arrow-down-01.svg)
-    no-repeat calc(100% -1rem);
+    background: url(../../assets/icons/arrow-down-01.svg) no-repeat 
+    calc(100% - 1rem);
+}
+
+.address .flex {
+    gap: 1.25rem;
+}
+
+.input-wrapper:has([disabled]) {
+    opacity: .5;
+}
+
+input {
+    &[disabled] {
+        background-color: var(--surface-disabled); 
+        border: 1px solid var(--stroke-default);
+        color: var(--text-primary);
+    }
 }
