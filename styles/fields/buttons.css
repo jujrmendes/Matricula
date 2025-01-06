@@ -1,0 +1,23 @@
+button {
+    all: unset;
+    font-weight: 500;
+    color: var(--text-highlight);
+    padding: .75rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+button.btn-primary {
+    color: white;
+    background-color: #E43A12;
+}
+
+button.btn-primary:hover,
+button.btn-primary:focus {
+    /* Adicione estilos aqui ou remova este bloco */
+}
+
+button.btn-secondary {
+    margin-left: auto;
+    border: 1px solid var(--text-highlight); /* Corrigido o nome da variável */
+}
